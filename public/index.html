@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chawndra — Account Executive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo">Chawndra</a>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#roles">Roles</a>
+        <a href="#skills">Skills</a>
+        <a href="#help">How You Can Help</a>
+        <a href="#contact" class="nav__cta">Get in Touch</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#roles" onclick="closeMobile()">Roles</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#help" onclick="closeMobile()">How You Can Help</a>
+      <a href="#contact" onclick="closeMobile()">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <span class="tag tag--green">OPEN TO OPPORTUNITIES</span>
+      <h1 class="hero__headline">Hey, I'm Chawndra —<br />and I'm looking for my next opportunity.</h1>
+      <p class="hero__sub">Ambitious Account Executive with a decade of B2B enterprise sales experience. While I have a proven track record closing multi-million-dollar enterprise deals, my true passion lies in the startup grind and driving agile mid-market growth. I bring enterprise-level discipline to scaling fast-paced organizations.</p>
+      <a href="#contact" class="btn btn--primary">HELP ME FIND MY NEXT ROLE</a>
+    </div>
+    <div class="hero__scroll">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+  <!-- WORK STYLE BANNER -->
+  <div class="banner" id="about">
+    <div class="container banner__inner">
+      <span class="banner__icon">🌐</span>
+      <p>Open to <strong>ONSITE</strong>, <strong>HYBRID</strong>, or <strong>REMOTE</strong> opportunities</p>
+    </div>
+  </div>
+
+  <!-- ROLES -->
+  <section class="section roles" id="roles">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">What I'm Looking For</span>
+        <h2>Roles &amp; Employment Types</h2>
+      </div>
+      <div class="roles__grid">
+        <div class="card">
+          <h3 class="card__title">I'm Looking for These Roles</h3>
+          <ul class="checklist">
+            <li><span class="check">✓</span> Account Executive</li>
+            <li><span class="check">✓</span> Founding Account Executive</li>
+            <li><span class="check">✓</span> Mid-Market Account Executive</li>
+            <li><span class="check">✓</span> Startup Sales Specialist</li>
+            <li><span class="check">✓</span> Enterprise Account Executive</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Open to Any of These Structures</h3>
+          <ul class="checklist">
+            <li><span class="check">✓</span> Full-Time Employee</li>
+            <li><span class="check">✓</span> Part-Time Employee</li>
+            <li><span class="check">✓</span> Full-Time Contracts</li>
+            <li><span class="check">✓</span> Part-Time Contracts</li>
+            <li><span class="check">✓</span> Freelance Projects</li>
+            <li><span class="check">✓</span> Consulting Projects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUTSHELL -->
+  <section class="section nutshell" id="skills">
+    <div class="container nutshell__inner">
+      <div class="nutshell__text">
+        <span class="section__eyebrow">My Background</span>
+        <h2>What I Can Do in a Nutshell</h2>
+        <p>I bring ten years of enterprise SaaS experience to the startup space. I excel at high-volume prospecting, uncovering high-value opportunities, and translating complex customer needs into tailored commercial solutions.</p>
+        <p>While I know how to successfully navigate complex 4-to-9 month enterprise procurement cycles, I prefer the agility of building from the ground up and am heavily motivated by fast-paced new business acquisition.</p>
+      </div>
+      <div class="nutshell__skills">
+        <span class="section__eyebrow">Special Skills &amp; Expertise</span>
+        <div class="skill-pills">
+          <span class="pill">Startup &amp; Mid-Market Growth</span>
+          <span class="pill">Enterprise Sales Discipline</span>
+          <span class="pill">B2B New Business Acquisition</span>
+          <span class="pill">High-Velocity Sales</span>
+          <span class="pill">ROI-Based Selling</span>
+          <span class="pill">Complex Deal Navigation</span>
+          <span class="pill">Pipeline Development</span>
+          <span class="pill">Consultative Selling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats">
+    <div class="container stats__inner">
+      <div class="stat">
+        <span class="stat__number">10+</span>
+        <span class="stat__label">Years in B2B Sales</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">$M+</span>
+        <span class="stat__label">Enterprise Deals Closed</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">4–9</span>
+        <span class="stat__label">Month Cycles Navigated</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">100%</span>
+        <span class="stat__label">Driven to Build &amp; Scale</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 WAYS TO HELP -->
+  <section class="section help" id="help">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">Community</span>
+        <h2>10 Ways You Can Help</h2>
+        <p class="section__desc">Whether you're a recruiter, founder, sales leader, or just a connector — here's how you can make a difference.</p>
+      </div>
+      <div class="help__grid">
+
+        <div class="help-card">
+          <span class="help-card__num">01</span>
+          <h4>Make an Introduction</h4>
+          <p>Know a founder, hiring manager, or sales leader at a startup or growing company? An intro goes a long way.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">02</span>
+          <h4>Refer Me to an Open Role</h4>
+          <p>Seen a job posting that fits? Forward it my way or tag me. Employee referrals significantly boost visibility.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">03</span>
+          <h4>Share My Profile</h4>
+          <p>A simple LinkedIn share or a mention in a Slack community can land in front of the right person at the right time.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">04</span>
+          <h4>Coffee Chat With Me</h4>
+          <p>An informational conversation about your industry, team, or company can open doors I didn't know existed.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">05</span>
+          <h4>Give a Testimonial or Endorsement</h4>
+          <p>Worked with me before? A LinkedIn recommendation or kind word to a hiring manager means the world.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">06</span>
+          <h4>Serve as a Reference</h4>
+          <p>Willing to speak to my work ethic and results? Let me know so I can list you when the moment comes.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">07</span>
+          <h4>Offer Honest Feedback</h4>
+          <p>Feedback on my resume, pitch, or LinkedIn is invaluable. Tell me what you see — I can handle the truth.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">08</span>
+          <h4>Keep Me in Mind</h4>
+          <p>Not the right moment now? That's okay. Bookmark this page and circle back when something opens up.</p>
+        </div>
+
+        <div class="help-card">
+          <span class="help-card__num">09</span>
+          <h4>Connect Me to Your Network</h4>
+          <p>Your second-degree connections could be my next team. Don't be shy about making that warm handshake.</p>
+        </div>
+
+        <div class="help-card help-card--accent">
+          <span class="help-card__num">10</span>
+          <h4>Share Your Expertise</h4>
+          <p>Share your expertise with me if you specialize in any of the following:</p>
+          <ul>
+            <li>Startup Scaling &amp; Growth</li>
+            <li>CRM platforms like Salesforce, HubSpot, or Clari</li>
+            <li>Sales engagement tools like Gong, Outreach, or Salesloft</li>
+            <li>Agile Go-To-Market Strategies</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__text">
+        <span class="section__eyebrow">Get in Touch</span>
+        <h2>Ready to make a connection?</h2>
+        <p>Whether you have a role, a referral, or just want to chat — I'd love to hear from you. Fill out the form and I'll get back to you promptly.</p>
+        <div class="contact__details">
+          <a href="mailto:hello@chawndra.com" class="contact__link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            hello@chawndra.com
+          </a>
+          <a href="https://linkedin.com/in/chawndra" target="_blank" class="contact__link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+        </div>
+        <div class="form-group">
+          <label for="company">Company (optional)</label>
+          <input type="text" id="company" name="company" placeholder="Acme Startup" />
+        </div>
+        <div class="form-group">
+          <label for="how">How can you help?</label>
+          <select id="how" name="how">
+            <option value="">Select one…</option>
+            <option>I have a role or referral</option>
+            <option>I want to make an introduction</option>
+            <option>I'd like a coffee chat</option>
+            <option>I can offer feedback or a testimonial</option>
+            <option>I want to share expertise</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell me more…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <p class="form__success" id="formSuccess">Thanks! I'll be in touch soon. 🎉</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__name">Chawndra</p>
+      <p class="footer__copy">© 2026 · Account Executive · Open to Opportunities</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
