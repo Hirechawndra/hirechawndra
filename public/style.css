@@ -310,9 +310,10 @@ p  { color: var(--muted); }
   justify-content: center;
   gap: 12px;
   font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--white);
+  font-weight: 600;
+  color: var(--navy);
 }
+.banner__inner p { color: var(--navy); }
 .banner__icon { font-size: 1.2rem; }
 .banner__inner strong { font-weight: 800; letter-spacing: .04em; }
 
