@@ -412,6 +412,49 @@ p  { color: var(--muted); }
 }
 
 /* =============================================
+   MY QUALIFICATIONS
+   ============================================= */
+.qualifications { background: var(--white); }
+
+.quals__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.qual-card {
+  background: var(--navy);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  border: 1px solid rgba(184,134,45,.2);
+  transition: transform .2s, box-shadow .2s;
+}
+.qual-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(13,27,42,.25);
+}
+.qual-card__value {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.qual-card__label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(255,255,255,.7);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+/* =============================================
    10 WAYS TO HELP
    ============================================= */
 .help { background: var(--off-white); }
@@ -602,6 +645,7 @@ p  { color: var(--muted); }
   .roles__grid { grid-template-columns: 1fr; }
   .nutshell__inner { grid-template-columns: 1fr; gap: 48px; }
   .stats__inner { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .quals__grid { grid-template-columns: repeat(2, 1fr); }
   .help__grid { grid-template-columns: repeat(2, 1fr); }
   .contact__inner { grid-template-columns: 1fr; gap: 48px; }
   .footer__inner { flex-direction: column; gap: 8px; text-align: center; }
