@@ -331,14 +331,27 @@ p  { color: var(--muted); }
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 12px;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--navy);
+  text-align: center;
 }
-.banner__inner p { color: var(--navy); }
+.banner__inner p {
+  color: var(--navy);
+  text-align: center;
+  margin: 0;
+  max-width: 900px;
+  line-height: 1.5;
+}
 .banner__icon { font-size: 1.2rem; }
 .banner__inner strong { font-weight: 800; letter-spacing: .04em; }
+
+@media (max-width: 600px) {
+  .banner__inner { gap: 8px; font-size: 0.88rem; }
+  .banner__icon { font-size: 1.1rem; }
+}
 
 /* =============================================
    ROLES
