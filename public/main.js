@@ -48,21 +48,23 @@ const cookieBanner = document.getElementById('cookieBanner');
 const cookieAccept = document.getElementById('cookieAccept');
 const cookieDecline = document.getElementById('cookieDecline');
 
-function dismissCookieBanner() {
-  cookieBanner.classList.remove('visible');
-  setTimeout(() => { cookieBanner.style.display = 'none'; }, 400);
+if (cookieBanner && cookieAccept && cookieDecline) {
+  function dismissCookieBanner() {
+    cookieBanner.classList.remove('visible');
+    setTimeout(() => { cookieBanner.style.display = 'none'; }, 400);
+  }
+
+  setTimeout(() => cookieBanner.classList.add('visible'), 800);
+
+  cookieAccept.addEventListener('click', () => {
+    dismissCookieBanner();
+  });
+
+  cookieDecline.addEventListener('click', () => {
+    window['ga-disable-G-M5H33SLT5Q'] = true;
+    dismissCookieBanner();
+  });
 }
-
-setTimeout(() => cookieBanner.classList.add('visible'), 800);
-
-cookieAccept.addEventListener('click', () => {
-  dismissCookieBanner();
-});
-
-cookieDecline.addEventListener('click', () => {
-  window['ga-disable-G-M5H33SLT5Q'] = true;
-  dismissCookieBanner();
-});
 
 // Scroll-triggered fade-in
 const observer = new IntersectionObserver((entries) => {
