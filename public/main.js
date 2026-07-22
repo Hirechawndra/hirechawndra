@@ -53,18 +53,13 @@ function dismissCookieBanner() {
   setTimeout(() => { cookieBanner.style.display = 'none'; }, 400);
 }
 
-if (!localStorage.getItem('cookieConsent')) {
-  setTimeout(() => cookieBanner.classList.add('visible'), 800);
-}
+setTimeout(() => cookieBanner.classList.add('visible'), 800);
 
 cookieAccept.addEventListener('click', () => {
-  localStorage.setItem('cookieConsent', 'accepted');
   dismissCookieBanner();
 });
 
 cookieDecline.addEventListener('click', () => {
-  localStorage.setItem('cookieConsent', 'declined');
-  // Disable GA if declined
   window['ga-disable-G-M5H33SLT5Q'] = true;
   dismissCookieBanner();
 });
